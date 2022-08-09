@@ -2,4 +2,4 @@ SOURCES=	*.html \
 		*.css
 
 all: ${SOURCES}
-	for x in ${SOURCES}; do cp $$x ~/public_html; done
+	for x in ${SOURCES}; do scp $$x freefall.freebsd.org:~/public_html; done
